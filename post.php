@@ -1,14 +1,14 @@
 <?php
 $username = "Peter";
 $password = "Tak123tak";
-$message = "Welkom";
+$message = "";
 
 if (isset ($_POST["submit"])) {
     if ($_POST["Username"] == $username && $_POST["paswoord"] == $password){
-        echo $message;
+        $message = "Welkom";
     }
     else {
-        echo "inloggen mislukt!";
+        $message = "inloggen mislukt!";
     }
 }
 
@@ -37,7 +37,8 @@ if (isset ($_POST["submit"])) {
         <input type="text" name="Username" id="Username"> <br>
         <label for="password">Wachtwoord: </label>
         <input type="password" name="paswoord" id="paswoord"><br>
-        <input type="submit" name="submit">
+        <input type="submit" name="submit"><br>
+        <?php echo $message;?>
         
     </form>
     
