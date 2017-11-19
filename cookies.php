@@ -25,7 +25,7 @@ if (isset ($_POST["submit"])) {
 </head>
 <body>
     
-    <?php if ($_POST["gebruikersnaam"] == null && $_POST["paswoord"] == null) { ?>
+    <?php if (isset($_POST["gebruikersnaam"])==null && isset($_POST["paswoord"])==null) { ?>
     <h1>Inloggen</h1>
     <form action="cookies.php" method="post">
         <ul>
@@ -49,7 +49,9 @@ if (isset ($_POST["submit"])) {
         <a href="">Uitloggen</a>
         
         
-    <?php } ?>
+    <?php } 
+    print_r($file);
+    ?>
     
     
 </body>
