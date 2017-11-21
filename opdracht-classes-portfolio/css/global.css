@@ -1,0 +1,32 @@
+.navigation ul {
+    list-style: none;
+}
+.navigation ul li {
+    float: left;
+    border: none;
+    color: #000;
+    font-size: 1.5em;
+}
+.article,
+.article-aside {
+    float: left;
+}
+.author,
+.date {
+    float: left;
+}
+.date p {
+    float: left;
+}
+.date p:last-child {
+    transform: rotate(90deg);
+}
+.opening p {
+    font-weight: bold;
+}
+.categories p:first-child, .otherArticles p:first-child{
+    font-size: 1.25em;
+}
+.otherArticles {
+    border-top: 2px solid #777;
+}
