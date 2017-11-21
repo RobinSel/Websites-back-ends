@@ -29,15 +29,15 @@ $nominal = $test->nominal;
     <table>
         <tr>
             <td>Relatief</td>
-            <td><?php $relative ?></td>
+            <td><?php echo $test->roundNumber($relative) ?></td>
         </tr>
         <tr>
             <td>Procentueel</td>
-            <td><?php $hundred ?></td>
+            <td><?php echo $test->roundNumber($hundred) ?></td>
         </tr>
         <tr>
             <td>Nominaal</td>
-            <td><?php $nominal ?></td>
+            <td><?php echo $nominal ?></td>
         </tr>
         
     </table>
