@@ -2,7 +2,7 @@
 
 require_once 'Animals.php';
 
-class Lion extends Animals {
+class Lion extends Animal {
     protected $species;
     
     public function __construct ($name, $gender, $health, $species) {

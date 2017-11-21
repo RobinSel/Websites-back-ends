@@ -12,7 +12,7 @@ class Zebra extends Animal {
     }
     
     public function getSpecies () {
-        return $this->species
+        return $this->species;
     }
     
     
