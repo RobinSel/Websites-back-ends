@@ -13,8 +13,9 @@ class Percent{
         if ($this->relative = 1){$this->nominal = "Status-quo";}
         if ($this->relative < 1){$this->nominal = "Negative";}
         }
+    
     public function roundNumber($number) {
-        $roundedNumber = number_format($number);
+        $roundedNumber = number_format($number,2);
         return $roundedNumber;
     }    
     
