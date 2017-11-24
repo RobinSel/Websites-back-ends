@@ -7,13 +7,13 @@
 $htmlPage = new HTMLBuilder('html/header-partial.php', 'html/body-partial.php', 'html/footer-partial.php',
                             'css/global.css', 'js/script.js');
 
-$headerName = $htmlPage->getHeaderName();
-$bodyname = $htmlPage->getBodyName();
-$footerName = $htmlPage->getFooterName();
-$cssName = $htmlPage->getCssName();
-$jsName = $htmlPage->getJsName();
+echo $htmlPage->getHeaderName();
+echo $htmlPage->getBodyName();
+echo $htmlPage->getFooterName();
+echo $htmlPage->getCssName();
+echo $htmlPage->getJsName();
 
-require $htmlPage->getHeaderName();
+if($htmlPage->getHeaderName()!= null) {include $headerName;}
 if($htmlPage->getHeaderName()!= null) {include $bodyname;}
 if($htmlPage->getHeaderName()!= null) {include $footerName;}
 if($htmlPage->getHeaderName()!= null) {include $cssName;}
