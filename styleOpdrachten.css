@@ -1,0 +1,13 @@
+.onevenRijen {
+    background-color: #CCC;
+}
+thead tr th {
+    background-color: #AAA;
+    padding: 5px;
+}
+tbody tr td {
+    padding: 5px;
+}
+table tr:hover {
+    background-color: #B3FF99;
+}
