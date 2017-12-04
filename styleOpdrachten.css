@@ -11,3 +11,14 @@ tbody tr td {
 table tr:hover {
     background-color: #B3FF99;
 }
+.order {
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.ascending {
+    background-image: url(/SamSerrien/web-backend/public/img/icon-asc.png);
+}
+.descending {
+    background-image: url(/SamSerrien/web-backend/public/img/icon-desc.png);
+}
