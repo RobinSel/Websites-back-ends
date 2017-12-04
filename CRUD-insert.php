@@ -19,7 +19,7 @@ try{
             $gemeente = $_GET['gemeente'];
             $omzet = $_GET['omzet'];
             
-            $result = $db->query('INSERT INTO brouwers (brnaam, adres, postcode, gemeente, omzet) VALUES (' . $brnaam . ', ' . $adres . ', ' . $postcode . ', ' . $gemeente . ', ' . $omzet . ')');
+            $result = $db->query('INSERT INTO brouwers (brnaam, adres, postcode, gemeente, omzet) VALUES (\'' . $brnaam . '\', \'' . $adres . '\', ' . $postcode . ', \'' . $gemeente . '\', ' . $omzet . ')');
             
             if ($result) {
                 $insertMessage = 'Brouwer goed toegevoegd!';
