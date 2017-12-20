@@ -37,7 +37,7 @@ if(isset($_POST['send'])) {
     
     <h1>Mail</h1>
     
-    <form action="mail.php" method="post">
+    <form action="mail.php" method="post" id="sendMail">
         <ul>
             <li>
                 <label for="mailAdres">E-mail</label>
@@ -54,5 +54,37 @@ if(isset($_POST['send'])) {
         </ul>
         <input type="submit" name="send" value="Verzenden">
     </form>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    
+        $(document).ready(function(){
+            $('#sendMail').submit(function(){
+                var formData = $('#sendMail').serialize();
+				
+                $.ajax({
+
+					type: 'POST',
+					url: 'contact-API.php',
+					data: formData,
+					success: function(data) {
+							parsedData	=	JSON.parse(data);
+
+								$('.placeholder').append('<p>' + parsedData['status'] + '<p>');
+
+							}
+
+				});
+            })
+        });
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
 </body>
 </html>
