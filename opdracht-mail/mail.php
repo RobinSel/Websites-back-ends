@@ -55,7 +55,7 @@ if(isset($_POST['send'])) {
         <input type="submit" name="send" value="Verzenden">
     </form>
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
     
         $(document).ready(function(){
@@ -85,6 +85,6 @@ if(isset($_POST['send'])) {
         
         
         
-    </script>
+    </script>-->
 </body>
 </html>
